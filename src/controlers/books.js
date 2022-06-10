@@ -6,8 +6,8 @@ exports.addBook = async (req, res) => {
     const body = req.body;
     const newBook = await books.create({
       ...body,
-      bookFile: req.files.bookFile[0].filename,
-      imgCover: req.files.imgCover[0].filename,
+      // bookFile: req.files.bookFile[0].filename,
+      // imgCover: req.files.imgCover[0].filename,
     });
 
     console.log(req.body);
