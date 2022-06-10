@@ -20,7 +20,9 @@ exports.addBook = async (req, res) => {
     res.send({
       status: "failed",
       message: "cannot add book",
+      error: error,
     });
+
   }
 };
 
