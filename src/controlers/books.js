@@ -16,7 +16,7 @@ exports.addBook = async (req, res) => {
       data: newBook,
     });
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     res.send({
       status: "failed",
       message: "cannot add book",
